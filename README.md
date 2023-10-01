@@ -7,7 +7,7 @@
 hugo new site cognitiveoverload
 
 # add theme as submodule
-git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+git submodule add https://github.com/CaiJimmy/hugo-theme-stack/themes/hugo-theme-stack
 
 # copy from 
 # themes\hugo-theme-stack\exampleSite
