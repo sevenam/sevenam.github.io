@@ -1,13 +1,12 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
-date: '2019-02-28'
+description:
+date: '2023-10-01'
 aliases:
-  - about-us
-  - about-hugo
+  - about-me
   - contact
-license: CC BY-NC-ND
-lastmod: '2020-10-09'
+license:
+lastmod: '2023-10-01'
 menu:
     main: 
         weight: -90
@@ -15,20 +14,11 @@ menu:
             icon: user
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I mostly go by JB as my real name doesn't work too well internationally. \
+I live in Norway and currently write code for the company Cegal. \
+I mostly work in the .NET space but also spice it up with some javascript/typescript/python and stuff. \
+For many years I've been writing private notes for my own use, but it's time to share them online. \
+Maybe they'll be useful for someone else too...
 
-Hugo makes use of a variety of open source projects including:
-
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+My github account can be found on the link below. Not really anything too useful there though. \
+https://github.com/sevenam
