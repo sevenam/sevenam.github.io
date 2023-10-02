@@ -2,6 +2,7 @@
 
 ```bash
 # documentation: https://stack.jimmycai.com/guide/getting-started
+# github actions deployment: https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
 # create new site
 hugo new site cognitiveoverload
