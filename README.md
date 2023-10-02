@@ -13,7 +13,7 @@ git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-them
 # themes\hugo-theme-stack\exampleSite
 # to the "content" folder
 
-# add theme to config in the "hugo.toml" file:
+# add theme to config in the "hugo.yaml" file:
 theme = 'hugo-theme-stack'
 
 # serve with hugo localy on port 1313
