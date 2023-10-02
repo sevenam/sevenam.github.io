@@ -6,8 +6,7 @@ description: Benchmarking in .NET with BenchmarkDotNet
 image: "benchmarkdotnet.png"
 categories: [ ".net" ]
 tags: [
-    ".net",
-    "c#"
+    "benchmarkdotnet"
 ]
 ---
 
