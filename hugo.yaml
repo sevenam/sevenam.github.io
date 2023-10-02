@@ -31,18 +31,18 @@ params:
         page:
             - type: toc
 
-menu:
-    main: []
+# menu:
+#     main: []
 
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/sevenam
-          params:
-              icon: brand-github
+#     social:
+#         - identifier: github
+#           name: GitHub
+#           url: https://github.com/sevenam
+#           params:
+#               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+#         - identifier: twitter
+#           name: Twitter
+#           url: https://twitter.com
+#           params:
+#               icon: brand-twitter
