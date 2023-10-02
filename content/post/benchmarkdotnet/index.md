@@ -4,6 +4,11 @@ title: BenchmarkDotNet
 date: 2023-02-10
 description: Benchmarking in .NET with BenchmarkDotNet
 image: "benchmarkdotnet.png"
+categories: [ ".net" ]
+tags: [
+    ".net",
+    "c#"
+]
 ---
 
 Sometimes it's useful to benchmark or compare some code. For dotnet one alternative is BenchmarkDotNet and here's a quick howto for you to get started.
