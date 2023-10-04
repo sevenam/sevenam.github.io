@@ -1,6 +1,6 @@
 baseURL: 'http://example.org/'
 languageCode: 'en-us'
-title: 'c o g n i t i v e ; o v e r l o a d'
+title: 'cognitive;overload'
 theme: 'hugo-theme-stack'
 
 paginate: 5
@@ -30,6 +30,13 @@ params:
                   limit: 10
         page:
             - type: toc
+
+    sidebar:
+        subtitle: A programming blog
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.jpg
 
 # menu:
 #     main: []
