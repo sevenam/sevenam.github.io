@@ -1,7 +1,7 @@
 ---
 author: JB
 title: BenchmarkDotNet
-date: 2023-25-08
+date: 2023-08-25
 description: Benchmarking in .NET with BenchmarkDotNet
 image: "benchmarkdotnet.png"
 categories: [ ".net" ]
