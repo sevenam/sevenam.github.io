@@ -5,9 +5,7 @@ date: 2023-08-25
 description: Benchmarking in .NET with BenchmarkDotNet
 image: "benchmarkdotnet.png"
 categories: [ ".net" ]
-tags: [
-    "benchmarkdotnet"
-]
+tags: [ "BenchmarkDotNet" ]
 ---
 
 Ref: https://github.com/dotnet/BenchmarkDotNet

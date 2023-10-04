@@ -5,9 +5,7 @@ date: 2023-08-18
 description: Chatting with Copilot about your code
 image: "github-copilot-logo.png"
 categories: []
-tags: [
-    "github", "copilot"
-]
+tags: [ "GitHub", "Copilot" ]
 ---
 
 Ref: https://docs.github.com/en/copilot
