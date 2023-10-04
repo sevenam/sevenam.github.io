@@ -14,7 +14,7 @@ menu:
             icon: user
 ---
 
-Just a space to share my notes so they can be useful for others as well.
+Just a place to share my notes so they can be useful for others as well.
 
 Built with [https://gohugo.io](https://gohugo.io) \
 Beautiful and functional heme by Jimmy: [https://github.com/CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
