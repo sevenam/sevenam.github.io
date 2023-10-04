@@ -17,6 +17,6 @@ menu:
 Just a place to share my notes so they can be useful for others as well.
 
 Built with [https://gohugo.io](https://gohugo.io) \
-Beautiful and functional heme by Jimmy: [https://github.com/CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
+Beautiful and functional theme by Jimmy: [https://github.com/CaiJimmy/hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
 
 
