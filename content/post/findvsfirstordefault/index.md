@@ -5,7 +5,7 @@ date: 2023-08-11
 description: Collection and EntityFramework performance
 image: ""
 categories: [".net"]
-tags: [ "C#", "sonarlint", "EntityFramework" ]
+tags: [ "c#", "sonarlint", "EntityFramework" ]
 ---
 
 Ref: https://rules.sonarsource.com/csharp/RSPEC-6602/ \
