@@ -4,8 +4,8 @@ title: GitHub Copilot Chat
 date: 2023-08-18
 description: Chatting with Copilot about your code
 image: "headers/github-copilot-chat-logo.jpg"
-categories: []
-tags: [ "GitHub", "Copilot" ]
+categories: [ "ai" ]
+tags: [ "github", "copilot" ]
 ---
 
 Ref: https://docs.github.com/en/copilot
