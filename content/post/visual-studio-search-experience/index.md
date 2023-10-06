@@ -3,7 +3,7 @@ author: JB
 title: The new Visual Studio Search Experience
 date: 2023-04-28
 description: Navigating code with the new search experience
-image: "headers/visual-studio-logo.jpg"
+image: "logos/visual-studio-logo.jpg"
 categories: [ ]
 tags: [ "visualstudio" ]
 ---

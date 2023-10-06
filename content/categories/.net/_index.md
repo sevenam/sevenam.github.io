@@ -2,7 +2,7 @@
 title: ".net"
 description: ".NET Framework"
 slug: ".net"
-image: "net-logo.png"
+image: "logos/net-logo.png"
 style:
     background: "#5027D5"
     color: "#fff"

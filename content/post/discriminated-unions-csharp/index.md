@@ -3,7 +3,7 @@ author: JB
 title: Discriminated unions in C#
 date: 2023-03-17
 description: Using the library OneOf in C#
-image: "headers/c-sharp-logo.png"
+image: "logos/c-sharp-logo.png"
 categories: [ ".net" ]
 tags: [ "c#", "f#" ]
 ---

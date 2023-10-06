@@ -3,7 +3,7 @@ author: JB
 title: Dotnet user-secrets
 date: 2023-04-14
 description: Don't store secrets in your configs!
-image: "headers/net-logo.png"
+image: "logos/net-logo.png"
 categories: [".net", "security" ]
 tags: [ ]
 ---

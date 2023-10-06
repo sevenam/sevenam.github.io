@@ -3,7 +3,7 @@ author: JB
 title: Git commit back in the past
 date: 2023-06-09
 description: How to do a git commit in the past
-image: "headers/git-logo.png"
+image: "logos/git-logo.png"
 categories: [ "git" ]
 tags: [ "git" ]
 ---

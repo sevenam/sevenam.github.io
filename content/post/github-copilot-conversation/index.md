@@ -3,7 +3,7 @@ author: JB
 title: Conversing with GitHub Copilot
 date: 2023-06-16
 description: Making GitHub Copilot function like a chat bot
-image: "headers/github-copilot-logo.png"
+image: "logos/github-copilot-logo.png"
 categories: [ "ai" ]
 tags: [ "github", "copilot" ]
 ---
