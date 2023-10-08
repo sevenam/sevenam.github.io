@@ -10,7 +10,10 @@ tags: [ "benchmarkdotnet" ]
 
 Ref: https://github.com/dotnet/BenchmarkDotNet
 
+
 Sometimes it's useful to benchmark or compare some code. For dotnet one alternative is BenchmarkDotNet and here's a quick howto for you to get started.
+
+### Installation
 
 Add nuget to your csproj file:
 ```xml
@@ -22,6 +25,8 @@ If you want to e.g. compare multiple .NET versions, make sure to add the version
 ```xml
 <TargetFrameworks>net48;net7.0;net6.0;netcoreapp3.1</TargetFrameworks>
 ```
+
+### Writing a benchmark
 
 Create a class for your benchmarks and add [SimpleJob] attributes for the .NET versions you want. Then tag your benchmark methods with the [Benchmark] attribute.
 
@@ -49,6 +54,8 @@ namespace SomeBenchmarkProject
     }
 ```
 
+### Executing benchmarks
+
 Add code to execute the benchmarks like this:
 
 ```cs
@@ -58,6 +65,8 @@ BenchmarkRunner.Run<EfCoreBenchmarks>();
 ```
 
 Then make sure to build for Release and Run without Debugging (Ctrl+F5).
+
+### Adding plots with R
 
 
 If you also want plots, you need to install R:
