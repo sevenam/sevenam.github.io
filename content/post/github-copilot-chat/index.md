@@ -3,7 +3,7 @@ author: JB
 title: GitHub Copilot Chat
 date: 2023-08-18
 description: Chatting with Copilot about your code
-image: "logos/github-copilot-chat-logo.jpg"
+image: "logos/github-copilot-logo.png"
 categories: [ "ai" ]
 tags: [ "github", "copilot" ]
 ---
