@@ -1,9 +1,9 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://cognitiveoverload.blog.com'
 languageCode: 'en-us'
 title: 'cognitive;overload'
 theme: 'hugo-theme-stack'
-
 paginate: 5
+disqusShortname: cognitiveoverload
 
 params:
     mainSections:
@@ -12,9 +12,9 @@ params:
     rssFullContent: true
     favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
-    # comments:
-    #   enabled: true
-    #   provider: disqus
+    comments:
+        enabled: true
+        provider: disqus
 
     widgets:
         homepage:
