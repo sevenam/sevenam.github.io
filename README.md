@@ -22,4 +22,21 @@ hugo serve -p 1313
 
 # configure the site in the hugo.yaml file
 # see config example at: themes/hugo-theme-stack/exampleSite/config.yaml
+
+```
+
+## Adding Disqus
+
+Create a disqus.com account, create a site and add the following in the config.yaml:
+
+```yaml
+disqusShortname: name-of-your-disqus-site
+
+params:
+    comments:
+        enabled: true
+        provider: disqus
+
+
+
 ```
