@@ -4,6 +4,7 @@ title: 'cognitive;overload'
 theme: 'hugo-theme-stack'
 paginate: 5
 disqusShortname: cognitiveoverload
+googleAnalytics: G-CVY8L9NYMD
 
 params:
     mainSections:
