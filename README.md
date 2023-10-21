@@ -32,7 +32,7 @@ git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-them
 # add theme to config in the "hugo.yaml" file:
 theme = 'hugo-theme-stack'
 
-# serve with hugo localy on port 1313
+# serve with hugo locally on port 1313
 hugo serve -p 1313
 
 # configure the site in the hugo.yaml file
@@ -51,7 +51,13 @@ params:
     comments:
         enabled: true
         provider: disqus
+```
 
+## Adding Google Analytics
 
+Log in to https://analytics.google.com/ and create a new account for the site.
+Add this to your hugo config:
 
+```yaml
+googleAnalytics: G-CODEFORYOURSITE
 ```
