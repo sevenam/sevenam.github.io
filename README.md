@@ -1,6 +1,21 @@
 # cognitiveoverload
 
+## Installing Hugo
+
 ```bash
+# documentation: https://gohugo.io/installation/
+
+# windows
+winget install Hugo.Hugo.Extended
+
+# macos/linux
+brew install hugo
+```
+
+## Setting up a new site
+
+```bash
+
 # documentation: https://stack.jimmycai.com/guide/getting-started
 # github actions deployment: https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
