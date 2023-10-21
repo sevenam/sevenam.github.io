@@ -34,10 +34,6 @@ After installing the Hugo CLI the next step is to create a new site. \
 See the following link for more detailed documentation: https://gohugo.io/getting-started/quick-start/
 
 ```bash
-
-# documentation: https://stack.jimmycai.com/guide/getting-started
-# github actions deployment: https://gohugo.io/hosting-and-deployment/hosting-on-github/
-
 # create new site
 hugo new site cognitiveoverload
 ```
@@ -53,11 +49,12 @@ Start by adding the theme repo as a submodule:
 
 ```bash
 # add theme as submodule
+# theme documentation: https://stack.jimmycai.com/guide/getting-started
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
 
 After adding the submodule, there should be a theme in the `themes` folder in your new site. \
-Then create a starting point for your content by copying the theme example into your own content folder:
+Create a starting point by copying the theme example into the `content` folder in the root of your new site:
 
 ```bash
 # copy from:
@@ -120,7 +117,7 @@ params:
 
 ## Spinning up the site locally
 
-To have a peek at how the site looks like, you can spin up web server locally with the Hugo CLI:
+To have a peek at how the site looks like, you can spin up web server locally with the Hugo CLI and opening in your browser on http://localhost:1313
 
 ```bash
 # serve with hugo locally on port 1313
