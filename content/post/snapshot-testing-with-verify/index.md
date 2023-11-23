@@ -5,7 +5,7 @@ date: 2023-02-10
 description:
 image: "logos/net-logo.png"
 categories: [ ".net", "testing" ]
-tags: [ "c#", "verify" ]
+tags: [ "c-sharp", "verify" ]
 ---
 
 Ref: https://github.com/VerifyTests/Verify

@@ -5,7 +5,7 @@ date: 2023-03-10
 description:
 image: "logos/fluentvalidation-logo.png"
 categories: [".net"]
-tags: [ "c#", "fluentvalidation", "asp.net" ]
+tags: [ "c-sharp", "fluentvalidation", "asp.net" ]
 ---
 
 Ref: https://docs.fluentvalidation.net/en/latest

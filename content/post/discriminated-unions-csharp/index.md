@@ -5,7 +5,7 @@ date: 2023-03-17
 description: Using the library OneOf in C#
 image: "logos/c-sharp-logo.png"
 categories: [ ".net" ]
-tags: [ "c#", "f#" ]
+tags: [ "c-sharp", "f-sharp" ]
 ---
 
 Ref: https://github.com/mcintyre321/OneOf

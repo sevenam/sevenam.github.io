@@ -5,7 +5,7 @@ date: 2023-03-03
 description: Sending code to the interactive window with Ctrl+E
 image: "logos/c-sharp-logo.png"
 categories: [".net"]
-tags: [ "c#", "visualstudio" ]
+tags: [ "c-sharp", "visualstudio" ]
 ---
 
 So, turns out there is an option for sending code directly from the Visual Studio text editor to the `C# interactive window` for execution.
