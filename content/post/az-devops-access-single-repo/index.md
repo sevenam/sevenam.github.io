@@ -20,7 +20,7 @@ If the user does not exist in the organization already they need to be added:
 - Add users
 - Access level: Basic (this is required for access to Git Repositories)
 
-![User basic access](repository-access.png)
+![User basic access](basic-access.png)
 
 ### Granting access to the git repository
 
