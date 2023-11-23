@@ -1,7 +1,7 @@
 ---
 author: JB
 title: Allowing access to a single repo in Azure DevOps
-date: 2023-23-11
+date: 2023-11-23
 description: How to allow access for a user to a single repository within an Azure DevOps project
 image: "logos/azure-devops-logo.jpg"
 categories: [ "git" ]
