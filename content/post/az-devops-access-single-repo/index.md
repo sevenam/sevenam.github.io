@@ -20,6 +20,8 @@ If the user does not exist in the organization already they need to be added:
 - Add users
 - Access level: Basic (this is required for access to Git Repositories)
 
+![User basic access](repository-access.png)
+
 ### Granting access to the git repository
 
 Then proceed to the Azure DevOps project where the git repository resides:
@@ -41,4 +43,4 @@ The user will also need access to `View project-level information` to be able to
 - Create a new Group and add the user to this group
 - Click the group and in the Permissions tab grant/allow the following: View project-level information
 
-![Repository access](project-level-access.png)
+![Project level access](project-level-access.png)
