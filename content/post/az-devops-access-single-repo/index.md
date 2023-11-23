@@ -34,7 +34,7 @@ Then proceed to the Azure DevOps project where the git repository resides:
 
 ![Repository access](repository-access.png)
 
-## Project level access
+### Project level access
 
 The user will also need access to `View project-level information` to be able to clone the repository:
 
