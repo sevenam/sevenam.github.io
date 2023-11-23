@@ -4,7 +4,7 @@ title: FluentValidation for endpoint input validation in .net
 date: 2023-03-10
 description:
 image: "logos/fluentvalidation-logo.png"
-categories: [".net"]
+categories: ["dotnet"]
 tags: [ "c-sharp", "fluentvalidation", "asp.net" ]
 ---
 

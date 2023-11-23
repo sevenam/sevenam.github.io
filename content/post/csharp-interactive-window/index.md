@@ -4,7 +4,7 @@ title: Using the C# interactive window in Visual Studio
 date: 2023-03-03
 description: Sending code to the interactive window with Ctrl+E
 image: "logos/c-sharp-logo.png"
-categories: [".net"]
+categories: ["dotnet"]
 tags: [ "c-sharp", "visualstudio" ]
 ---
 

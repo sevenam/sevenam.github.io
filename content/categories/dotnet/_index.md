@@ -1,7 +1,7 @@
 ---
-title: ".net"
+title: "dotnet"
 description: ".NET Framework"
-slug: ".net"
+slug: "dotnet"
 image: "logos/net-logo.png"
 style:
     background: "#5027D5"

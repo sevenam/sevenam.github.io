@@ -4,7 +4,7 @@ title: Find() vs FirstOrDefault() in C#
 date: 2023-08-11
 description: Collection and EntityFramework performance
 image: "logos/c-sharp-logo.png"
-categories: [".net"]
+categories: ["dotnet"]
 tags: [ "c-sharp", "sonarlint", "entityframework" ]
 ---
 

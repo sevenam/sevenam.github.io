@@ -4,7 +4,7 @@ title: Snapshot testing with Verify
 date: 2023-02-10
 description:
 image: "logos/net-logo.png"
-categories: [ ".net", "testing" ]
+categories: [ "dotnet", "testing" ]
 tags: [ "c-sharp", "verify" ]
 ---
 

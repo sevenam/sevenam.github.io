@@ -4,7 +4,7 @@ title: JavaScript array equivalents to C# LINQ methods
 date: 2023-03-24
 description: Great reference for translating from C# LINQ to JS
 image: "logos/js-logo.png"
-categories: [ "javascript", ".net" ]
+categories: [ "javascript", "dotnet" ]
 tags: [ "c-sharp", "javascript", "js" ]
 ---
 

@@ -4,7 +4,7 @@ title: ASP.NET Core Service Lifetime
 date: 2023-04-21
 description: Singleton, Scoped, Transient
 image: "logos/net-logo.png"
-categories: [".net"]
+categories: ["dotnet"]
 tags: [ "asp.net" ]
 ---
 
