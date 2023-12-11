@@ -2,7 +2,7 @@
 author: JB
 title: Port struggles
 date: 2023-12-11
-description: How to debug port issues
+description: Going full circle debugging network port issues
 image: "logos/network.png"
 categories: [ "dotnet" ]
 tags: [ "powershell" ]
