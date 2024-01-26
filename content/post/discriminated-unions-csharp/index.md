@@ -8,8 +8,6 @@ categories: [ "dotnet" ]
 tags: [ "c-sharp", "f-sharp" ]
 ---
 
-Ref: https://github.com/mcintyre321/OneOf
-
 In F# (and other languages) we have the concept of discriminated unions. These provide support for values that can be `one of a number of named cases, possibly each with different values and types`.
 
 So what does that mean? \
@@ -75,3 +73,5 @@ public IActionResult Register(string username)
 
 This interesting youtube video by Nick Chapsas also shows how this can be used together with (fluent)validation in a neat way: \
 [(131) How to use Discriminated Unions Today in C# - YouTube](https://www.youtube.com/watch?v=7z-xjijYfcI)
+
+> Ref: https://github.com/mcintyre321/OneOf

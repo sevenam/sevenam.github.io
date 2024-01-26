@@ -8,8 +8,6 @@ categories: [ "markdown" ]
 tags: [ "markdown", "go", "hugo", "github" ]
 ---
 
-Ref: https://gohugo.io
-
 Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. \
 It is quite simple to install, set up and write content in using Markdown. \
 I'll describe step by step how I set up and created the blog you are currently reading using Hugo and GitHub.
@@ -244,3 +242,5 @@ This Measurement Id needs to be added in your Hugo config like this:
 ```yaml
 googleAnalytics: G-YOURIDGOESHERE
 ```
+
+> Ref: https://gohugo.io

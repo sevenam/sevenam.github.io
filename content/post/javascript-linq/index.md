@@ -8,8 +8,6 @@ categories: [ "javascript", "dotnet" ]
 tags: [ "c-sharp", "javascript", "js" ]
 ---
 
-Ref: https://gist.github.com/DanDiplo/30528387da41332ff22b
-
 [Dan Booth](https://www.diplo.co.uk/) has made this great reference containing JavaScript array equivalents to C# LINQ methods. \
 Really useful for us .NET devs when we're not writing our native language!
 
@@ -158,3 +156,5 @@ const peepsOver30OrderedDesc = peoples.filter(p => p.age > 30).map(p => p.name).
 
 console.log("Chained", peepsOver30OrderedDesc);
 ```
+
+> Ref: https://gist.github.com/DanDiplo/30528387da41332ff22b

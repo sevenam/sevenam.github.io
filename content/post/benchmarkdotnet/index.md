@@ -8,9 +8,6 @@ categories: [ "dotnet" ]
 tags: [ "benchmarkdotnet" ]
 ---
 
-Ref: https://github.com/dotnet/BenchmarkDotNet
-
-
 Sometimes it's useful to benchmark or compare some code. For dotnet one alternative is BenchmarkDotNet and here's a quick howto for you to get started.
 
 ### Installation
@@ -76,3 +73,5 @@ winget install -e --id RProject.R
 ```
 
 Add the rscript executable to your env path (E.g.: C:\Program Files\R\R-4.3.1\bin) and restart Visual Studio to pick up the environment variable change.
+
+> Ref: https://github.com/dotnet/BenchmarkDotNet

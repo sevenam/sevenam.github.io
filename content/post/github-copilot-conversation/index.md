@@ -8,9 +8,6 @@ categories: [ "ai" ]
 tags: [ "github", "copilot" ]
 ---
 
-Ref: https://dagshub.com/blog/github-copilot-not-code/
-
-
 I've been using GitHub Copilot for a couple of months now (more or less only as an advanced auto-complete). \
 However, I came across an interesting blog post yesterday that showed me it can do more than that.
 
@@ -26,3 +23,5 @@ Here's how it responded to non-code related question I asked it:
 ![GitHub Copilot Conversation Source Example](github-copilot-conversation-source.png)
 
 The interesting bit is that it just responds with a link, which is probably part of the data it was trained on (so it's sort of revealing it's secrets a bit).
+
+> Ref: https://dagshub.com/blog/github-copilot-not-code/

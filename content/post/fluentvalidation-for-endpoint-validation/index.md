@@ -8,8 +8,6 @@ categories: ["dotnet"]
 tags: [ "c-sharp", "fluentvalidation", "asp.net" ]
 ---
 
-Ref: https://docs.fluentvalidation.net/en/latest
-
 FluentValidation is a neat library that allows you to define validation rules using method chaining. It also allows you to hook into the asp.net core ModelState with very little plumbing, making it really easy to integrate into your existing API.
 
 So what you need is to do is:
@@ -72,3 +70,5 @@ public class StuffController : ControllerBase
 ```
 
 If you have multiple endpoints that use the same DTO class they are all validated as soon as you add a validation class for that type. For example you might have create and update endpoints that use the same DTO as input - both will be covered!
+
+> Ref: https://docs.fluentvalidation.net/en/latest

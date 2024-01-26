@@ -8,10 +8,6 @@ categories: [ "dotnet", "security" ]
 tags: [ "identityserver", "linqpad" ]
 ---
 
->Refs:
->- https://duendesoftware.com/products/identityserver
->- https://www.linqpad.net
-
 A refresh token returned by Duende IdentityServer should look something like this:
 
 `F84EC044B3389D99AF31949D4884C92323AD393844DD399912F4D321AA33CC3B-1`
@@ -56,3 +52,7 @@ The output of the key variable can then be used to lookup a refresh token in the
 ```sql
 SELECT * FROM PersistedGrants WHERE [key] = '49f2b873bc7106926723de2861f9057d4e9b68f3871f4e6047026d9172d48f00'
 ```
+
+> Refs:
+> - https://duendesoftware.com/products/identityserver
+> - https://www.linqpad.net
