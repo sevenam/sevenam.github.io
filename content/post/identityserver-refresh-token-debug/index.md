@@ -8,9 +8,9 @@ categories: [ "dotnet", "security" ]
 tags: [ "identityserver", "linqpad" ]
 ---
 
-Ref: \
-- https://duendesoftware.com/products/identityserver
-- https://www.linqpad.net
+>Refs:
+>- https://duendesoftware.com/products/identityserver
+>- https://www.linqpad.net
 
 A refresh token returned by Duende IdentityServer should look something like this:
 
