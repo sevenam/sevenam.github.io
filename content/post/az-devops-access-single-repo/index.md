@@ -5,7 +5,7 @@ date: 2023-11-23
 description: How to allow access for a user to a single repository within an Azure DevOps project
 image: "logos/azure-devops-logo.jpg"
 categories: [ "git" ]
-tags: [ "azure devops", "git", "gitops", "flux" ]
+tags: [ "azuredevops", "git", "gitops", "flux" ]
 ---
 
 At work we came across a need to grant a single user access to only a single repository in Azure DevOps. \
