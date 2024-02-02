@@ -1,14 +1,28 @@
 ---
 author: JB
 title: Code coverage in Azure DevOps
-date: 2024-01-30
+date: 2024-02-02
 description: Setting up code coverage in Azure DevOps (including dark mode)
 image: "logos/azure-devops-logo.jpg"
 categories: [ "testing" ]
 tags: [ "azuredevops", "codecoverage" ]
 ---
 
-Previously this is the go-to way I've used to set up code coverage in Azure DevOps:
+## Running the tests and collecting the code coverage
+
+```cs
+- task: DotNetCoreCLI@2
+  displayName: 'Dotnet test'
+  inputs:
+    command: 'test'
+    projects: '**/*Tests.csproj'
+    arguments: '--configuration $(buildConfiguration) --filter "Traits!=Local&Traits!=Interactive" --collect:"XPlat Code Coverage"'
+    publishTestResults: true
+```
+
+## Getting code coverage using scripts
+
+Previously I've been using this way to do code coverage in Azure DevOps:
 
 ```yaml
 - script: 'dotnet tool install -g dotnet-reportgenerator-globaltool'
@@ -23,6 +37,8 @@ Previously this is the go-to way I've used to set up code coverage in Azure DevO
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(build.sourcesdirectory)/Cobertura.xml'
 ```
+
+## Using the reportgenerator task and getting dark mode
 
 But I've never liked the light mode on the code coverage report as it really contrasts the dark theme I use in Azure DevOps. But there is a way to get it published in dark mode. The last time I tried this I overlooked the need for the `disable.coverage.autogenerate` variable, which was required to get the `HtmlInline_AzurePipelines_Dark` theme to work:
 
