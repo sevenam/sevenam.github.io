@@ -1,7 +1,7 @@
 ---
 author: JB
 title: Code coverage in Azure DevOps
-date: 2024-02-02
+date: 2024-02-15
 description: Setting up code coverage in Azure DevOps (including dark mode)
 image: "logos/azure-devops-logo.jpg"
 categories: [ "testing" ]
@@ -22,30 +22,29 @@ tags: [ "azuredevops", "codecoverage" ]
 
 ## Getting code coverage using scripts
 
-Previously I've been using this way to do code coverage in Azure DevOps:
+I've been using this way to do code coverage in Azure DevOps by using the dotnet CLI to install the ReportGenerator:
 
 ```yaml
+# Publish code coverage
 - script: 'dotnet tool install -g dotnet-reportgenerator-globaltool'
   displayName: 'Install ReportGenerator tool'
 
-- script: 'reportgenerator -reports:$(Agent.TempDirectory)/**/coverage.cobertura.xml -targetdir:$(build.sourcesdirectory) -reporttypes:"Cobertura" -classfilters:"" -assemblyfilters:"-*.Tests"'
+- script: 'reportgenerator -reports:$(Agent.TempDirectory)/**/coverage.cobertura.xml -targetdir:".coverlet" -reporttypes:"HtmlInline_AzurePipelines_Dark;Cobertura;lcov" -filefilters:"" -classfilters:"" -assemblyfilters:"-*.Tests"'
   displayName: 'Run code coverage ReportGenerator'
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage from $(build.sourcesdirectory)/Cobertura.xml'
   inputs:
     codeCoverageTool: Cobertura
-    summaryFileLocation: '$(build.sourcesdirectory)/Cobertura.xml'
+    summaryFileLocation: '.coverlet/Cobertura.xml'
+    reportDirectory: '.coverlet'
 ```
 
-## Using the reportgenerator task and getting dark mode
+## Using the ReportGenerator Azure DevOps extension
 
-But I've never liked the light mode on the code coverage report as it really contrasts the dark theme I use in Azure DevOps. But there is a way to get it published in dark mode. The last time I tried this I overlooked the need for the `disable.coverage.autogenerate` variable, which was required to get the `HtmlInline_AzurePipelines_Dark` theme to work:
+Another option is to install the Azure DevOps extension (https://marketplace.visualstudio.com/items?itemName=Palmmedia.reportgenerator)
 
 ```yaml
-variables:
-  disable.coverage.autogenerate: 'true'
-
 # Publish code coverage
 - task: reportgenerator@5
   displayName: Run code coverage report generator
@@ -64,3 +63,15 @@ variables:
     summaryFileLocation: '.coverlet/Cobertura.xml'
     reportDirectory: '.coverlet'
 ```
+
+## The trick to get dark mode to work
+
+This is all well and good, but I've never liked the light mode on the code coverage report as it really contrasts the dark theme I use in Azure DevOps. But there is a way to get it published in dark mode. The last time I tried this I overlooked the need for the `disable.coverage.autogenerate` variable, which was required to get the `HtmlInline_AzurePipelines_Dark` theme to work:
+
+```yaml
+variables:
+  disable.coverage.autogenerate: 'true'
+```
+
+Refs:
+[Daniel Palme's](https://github.com/danielpalme) ReportGenerator: https://github.com/danielpalme/ReportGenerator
