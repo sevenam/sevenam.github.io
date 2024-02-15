@@ -33,7 +33,7 @@ I've been using this way to do code coverage in Azure DevOps by using the dotnet
   displayName: 'Run code coverage ReportGenerator'
 
 - task: PublishCodeCoverageResults@1
-  displayName: 'Publish code coverage from $(build.sourcesdirectory)/Cobertura.xml'
+  displayName: 'Publish code coverage report'
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '.coverlet/Cobertura.xml'
