@@ -1,7 +1,7 @@
 ---
 author: JB
 title: Automatic semantic versioning with GitVersion
-date: 2023-06-09
+date: 2024-02-16
 description: How to set up GitVersion in Azure DevOps
 image: "logos/gitversion-logo.png"
 categories: [ "git", "dotnet" ]
@@ -233,6 +233,8 @@ Input details about the bugfix PR here
 
 DO NOT REMOVE THIS LINE: [+semver:patch]
 ```
+
+![Azure DevOps PR templates](azure-devops-pr-templates.png)
 
 Refs:
 - https://gitversion.net/
