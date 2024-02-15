@@ -10,7 +10,7 @@ tags: [ "azuredevops", "codecoverage" ]
 
 ## Running the tests and collecting the code coverage
 
-```cs
+```yaml
 - task: DotNetCoreCLI@2
   displayName: 'Dotnet test'
   inputs:
