@@ -66,7 +66,7 @@ Another option is to install the Azure DevOps extension (https://marketplace.vis
 
 ## The trick to get dark mode to work
 
-This is all well and good, but I've never liked the light mode on the code coverage report as it really contrasts the dark theme I use in Azure DevOps. But there is a way to get it published in dark mode. The last time I tried this I overlooked the need for the `disable.coverage.autogenerate` variable, which was required to get the `HtmlInline_AzurePipelines_Dark` theme to work:
+This is all well and good, but I never liked the light mode on the code coverage report as the contrast is painful on a poor developers eyes. But there is a way to get it published in dark mode. The last time I tried this I overlooked the need for the `disable.coverage.autogenerate` variable, which was required to get the `HtmlInline_AzurePipelines_Dark` theme to work:
 
 ```yaml
 variables:
