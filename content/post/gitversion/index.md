@@ -5,7 +5,7 @@ date: 2024-02-16
 description: How to set up GitVersion in Azure DevOps
 image: "logos/gitversion-logo.png"
 categories: [ "git", "dotnet" ]
-tags: [ "git", "azuredevops", "csharp" ]
+tags: [ "git", "azuredevops" ]
 ---
 
 Here's a guide on how to set up GitVersion in Azure DevOps and automatically work out the Semantic Version of the commit being built by leveraging your git history.
