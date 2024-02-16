@@ -1,7 +1,7 @@
 ---
 author: JB
 title: Automatic semantic versioning with GitVersion
-date: 2024-02-16
+date: 2024-02-15
 description: How to set up GitVersion in Azure DevOps
 image: "logos/gitversion-logo.png"
 categories: [ "git", "dotnet" ]
