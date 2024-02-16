@@ -160,11 +160,11 @@ Dotnet build and publish allows you to inject the version number into your proje
 ```yaml
 - script: dotnet restore ./YourSolution.sln
   displayName: 'Dotnet restore'
-- script: dotnet build --configuration $(debugBuild) /p:Version=$(version) ./YourSolution.sln
+- script: dotnet build --configuration $(debugBuild) /p:Version=$(GitVersion.SemVer) ./YourSolution.sln
   displayName: 'Dotnet build $(debugBuild) for tests'
-- script: dotnet build --configuration $(releaseBuild) /p:Version=$(version) ./YourSolution.sln
+- script: dotnet build --configuration $(releaseBuild) /p:Version=$(GitVersion.SemVer) ./YourSolution.sln
   displayName: 'Dotnet build $(releaseBuild)'
-- script: dotnet publish ./YourProject.csproj --configuration $(releaseBuild) -r win-$(buildPlatform) /p:Version=$(version)
+- script: dotnet publish ./YourProject.csproj --configuration $(releaseBuild) -r win-$(buildPlatform) /p:Version=$(GitVersion.SemVer)
   displayName: 'Dotnet publish $(releaseBuild) win-$(buildPlatform)'
 ```
 
