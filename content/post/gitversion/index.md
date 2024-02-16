@@ -52,7 +52,7 @@ And then execute it with the gitversion/execute task like this:
     configFilePath: './GitVersion.yml'
 ```
 
-This execution depends on the configuration being specified in the `GitVersion.yml` file directly in the root of the repository. In the configuration file you can specify your branching strategy. In the example below the strategy is to use a "main" branch and branching out "feature" and "bugfix" branches from that one while adding specific tags to them.
+This execution depends on the configuration being specified in the `GitVersion.yml` file, that in this case is placed directly in the root of the repository. In the configuration file you can specify your branching strategy. In the example below the strategy is to use a "main" branch and branching out "feature" and "bugfix" branches from that one while adding specific tags to them.
 
 ```yaml
 mode: Mainline
