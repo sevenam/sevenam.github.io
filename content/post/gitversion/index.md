@@ -8,7 +8,7 @@ categories: [ "git", "dotnet" ]
 tags: [ "git", "azuredevops" ]
 ---
 
-Here's a guide on how to set up GitVersion in Azure DevOps and automatically work out the Semantic Version of the commit being built by leveraging your git history.
+Here's a guide on how to set up GitVersion in Azure DevOps to automatically work out the Semantic Version of the commit being built by leveraging your git history.
 
 ## Requirements
 
