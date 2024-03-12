@@ -26,8 +26,12 @@ I've been using this way to do code coverage in Azure DevOps by using the dotnet
 
 ```yaml
 # Publish code coverage
-- script: 'dotnet tool install -g dotnet-reportgenerator-globaltool'
-  displayName: 'Install ReportGenerator tool'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: custom
+    custom: tool
+    arguments: install --tool-path . dotnet-reportgenerator-globaltool
+  displayName: Install ReportGenerator tool
 
 - script: 'reportgenerator -reports:$(Agent.TempDirectory)/**/coverage.cobertura.xml -targetdir:".coverlet" -reporttypes:"HtmlInline_AzurePipelines_Dark;Cobertura;lcov" -filefilters:"" -classfilters:"" -assemblyfilters:"-*.Tests"'
   displayName: 'Run code coverage ReportGenerator'
