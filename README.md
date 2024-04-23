@@ -40,6 +40,12 @@ hugo serve -p 1313
 
 ```
 
+## Updating hugo version
+
+Hugo version can be updated in `.github\workflows\hugo.yaml`
+
+Test against local version. Print local version with `hugo version`
+
 ## Adding Disqus
 
 Create a disqus.com account, create a site and add the following in the config.yaml:
