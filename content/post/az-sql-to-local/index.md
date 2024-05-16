@@ -34,15 +34,15 @@ Right click the `Databases` section and then select `Data-tier Application Wizar
 
 Proceed by selecting `Export the schema and data from a database to the logical .bacpac file format [Export Bacpac]`:
 
-![Data-tier Application Wizard Step 01](data-tier-app-wiz-step-01.png)
+![Data-tier Application Wizard Step 01](data-tier-wiz-step-01.png)
 
 Click Next and select the server, database and the file location for the `bacpac` file:
 
-![Data-tier Application Wizard Step 02](data-tier-app-wiz-step-02.png)
+![Data-tier Application Wizard Step 02](data-tier-wiz-step-02.png)
 
 Click Next to see the summary and then Export.
 
-![Data-tier Application Wizard Step 03](data-tier-app-wiz-step-03.png)
+![Data-tier Application Wizard Step 03](data-tier-wiz-step-03.png)
 
 The export will start and you will see the progress in Tasks:
 
