@@ -8,13 +8,13 @@ categories: [ "sql" ]
 tags: [ "azure" ]
 ---
 
-Sometimes it's useful to be able to work or debug real data locally. Here's a simple howto for exporting an Azure SQL database to your local SQL Server instance.
+Sometimes it's useful to be able to work with or debug data locally. Here's a simple howto for exporting an Azure SQL database to your local SQL Server instance.
 
 ## Requirements
 
 A really quick and simple way to export the database from Azure to your local machine is to use `Azure Data Studio` with the `Admin Pack for SQL Server` extension installed.
 
-You can install Azure Data Studio with `winget`:
+You can install Azure Data Studio with winget:
 
 ```bash
 winget install Microsoft.AzureDataStudio
