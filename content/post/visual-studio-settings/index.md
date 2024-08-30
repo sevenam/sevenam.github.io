@@ -76,7 +76,7 @@ Save your existing configuration, or just import the new settings:
 
 ![Import Visual Studio Settings 03](vs-settings-07.png)
 
-Click `Browse` to select the settings file you already exported and click *Next*:
+Click *Browse* to select the settings file you already exported and click *Next*:
 
 ![Import Visual Studio Settings 04](vs-settings-08.png)
 
