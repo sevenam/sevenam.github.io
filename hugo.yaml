@@ -11,7 +11,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /favicon-32x32.png
+    favicon: /favicon-32x32.jpg
 
     comments:
         enabled: true
