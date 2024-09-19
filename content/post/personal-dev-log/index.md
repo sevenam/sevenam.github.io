@@ -1,7 +1,7 @@
 ---
 author: JB
 title: Personal dev log
-date: 2023-08-11
+date: 2024-09-20
 description: Why and how to keep a personal development journal
 image: "logos/markdown-logo.png"
 categories: ["markdown"]
