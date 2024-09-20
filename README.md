@@ -67,3 +67,10 @@ Add this to your hugo config:
 ```yaml
 googleAnalytics: G-CODEFORYOURSITE
 ```
+
+## Troubleshooting
+
+```bash
+# after making changes, if no changes in git, run:
+git submodule update --init --recursive
+```
