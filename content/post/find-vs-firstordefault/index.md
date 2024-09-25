@@ -17,3 +17,4 @@ My favourite code analyser (SonarLint) told me something this week that I was no
 For small collections, the performance difference may be minor, but for large collections, it can make a noticeable difference. The same applies for ImmutableList and arrays too. `SonarLint` claims to have measured at least 2x improvement in the execution time.
 Also for database queries it could make a difference as `FirstOrDefault()` will always execute the query against the database while `Find()` will try the memory db context first.
 
+> Update 25.09.2024: .NET9 appears to have optimized `IEnumerable.FirstOrDefault()` - making it faster than `List.Find()` (ref: https://www.youtube.com/watch?v=UfjRoshu23w)
