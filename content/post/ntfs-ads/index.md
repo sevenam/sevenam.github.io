@@ -46,7 +46,7 @@ ZoneId=3
 Set-Content $filePath -Stream Zone.Identifier -Value $zoneIdentifier
 ```
 
-If we open a cmd prompt and run `dir \r` we can see this very clearly:
+If we open a cmd prompt and run `dir /r` we can see this very clearly:
 
 ![dir /r](dir-zone-identifier.png)
 
