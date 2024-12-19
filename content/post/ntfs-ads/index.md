@@ -4,7 +4,7 @@ title: NTFS & Alternate Data Streams (ADS)
 date: 2024-12-19
 description: NTFS and Alternate what?
 image: "ntfs.png"
-categories: []
+categories: [ "infosec" ]
 tags: [ "powershell" ]
 ---
 
