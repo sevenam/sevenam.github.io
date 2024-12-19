@@ -4,7 +4,7 @@ title: Debugging IdentityServer refresh tokens
 date: 2024-01-26
 description: Looking up refresh tokens in the IdentityServer database
 image: "logos/duende-logo.png"
-categories: [ "dotnet", "security" ]
+categories: [ "dotnet", "infosec" ]
 tags: [ "identityserver", "linqpad" ]
 ---
 
