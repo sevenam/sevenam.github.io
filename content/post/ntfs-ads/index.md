@@ -2,7 +2,7 @@
 author: JB
 title: NTFS & Alternate Data Streams (ADS)
 date: 2024-12-19
-description: NTFS and Alternate what?
+description: Exploring one of the more hidden sides of NTFS - Alternate Data Streams
 image: "ntfs.png"
 categories: [ "infosec" ]
 tags: [ "powershell" ]
