@@ -121,7 +121,6 @@ wscript.exe .\file.txt:evil.vbs
 
 ![wscript exec](wscript-exec.png)
 
-NTFS Alternate Data Streams is not a well known feature which was included, primarily, to provide compatibility with files in the Mac file system. This was something I had completely missed until now and I was surprised to learn about it!
 
 Refs:
 - https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview
