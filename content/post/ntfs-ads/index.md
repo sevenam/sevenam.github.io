@@ -119,7 +119,7 @@ wscript.exe .\file.txt:evil.vbs
 
 ![wscript exec](wscript-exec.png)
 
-While Alternate Data Streams provide useful capabilities, they also pose a security risk if misused. We've seen how they can be used to try improve security by appending a Zone.Identifier, but also how they can be used for bad by hiding rootkits or similar within files.
+While Alternate Data Streams provide useful capabilities, they also pose a security risk if misused. We've seen how they can be used to try improve security by appending a Zone.Identifier, but also how they can be used for bad, by hiding rootkits or similar within files.
 
 References:
 - https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview
