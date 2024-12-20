@@ -1,6 +1,6 @@
 ---
 author: JB
-title: NTFS & Alternate Data Streams (ADS)
+title: NTFS and Alternate Data Streams (ADS)
 date: 2024-12-19
 description: Exploring one of the more hidden sides of NTFS - Alternate Data Streams
 image: "ntfs.png"
