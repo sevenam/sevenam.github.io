@@ -26,7 +26,7 @@ file.txt::$DATA
 
 ### More streams
 
-Note that a file consist of at least one stream, meaning it can actually contain more than just one. After downloading a file from the Internet you may have noticed the following after checking the properties of the file:
+Note that a file consist of at least one stream, meaning it can actually contain more than one. After downloading a file from the Internet you may have noticed the following after checking the properties of the file:
 
 ![NTFS file security warning](ntfs-file-security-warning.png)
 
@@ -46,7 +46,7 @@ ZoneId=3
 Set-Content $filePath -Stream Zone.Identifier -Value $zoneIdentifier
 ```
 
-If we open a cmd prompt and run `dir /r` we can see this very clearly:
+If we open a cmd prompt and run `dir /r` we can see the result very clearly:
 
 ![dir /r](dir-zone-identifier.png)
 
@@ -79,7 +79,7 @@ Which gives the expected result:
 
 ![cat .\file.txt:Zone.Identifier](cat-zone-identifier.png)
 
-If we want to programmatically remove the Zone.Identifier (which is what happens if we `Unblock` the file in explorer properties) we can do that with Powershell as well:
+If we want to programmatically remove the Zone.Identifier (which is what happens if we `Unblock` the file in the Windows Explorer properties) we can do that with Powershell as well:
 
 ```powershell
 Remove-Item .\file.txt -Stream Zone.Identifier
@@ -103,15 +103,15 @@ And let's proceed to put this as an alternate data stream for the .\file.txt:
 ```powershell
 cat .\evil.vbs > .\file.txt:evil.vbs
 
-# and then let's just delete the vbs file so nobody will know
+# and then let's delete the vbs file so nobody will know
 rm evil.vbs
 ```
 
-Let's just check the alternate data streams for the file again:
+Let's check the alternate data streams for the .vbs file:
 
 ![.\file.txt:evil.vbs](evil.png)
 
-It's added in there along with the Zone.Identifier we added earlier, fairly well hidden to the user as it's not visible in windows explorer. The size change is not visible either, since the main data stream is still the same size.
+It's added in there along with the Zone.Identifier we added earlier, fairly well hidden to the user as it's not visible in Windows Explorer. The size change is not visible either, since the main data stream is still the same size.
 
 If we want to we can also execute the .vbs script with:
 
@@ -121,8 +121,9 @@ wscript.exe .\file.txt:evil.vbs
 
 ![wscript exec](wscript-exec.png)
 
+NTFS Alternate Data Streams is not a well known feature which was included, primarily, to provide compatibility with files in the Mac file system. This was something I had completely missed until now and I was surprised to learn about it!
 
-Ref:
+Refs:
 - https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview
 - https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/b134f29a-6278-4f3f-904f-5e58a713d2c5
 - https://owasp.org/www-community/attacks/Windows_alternate_data_stream
