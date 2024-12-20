@@ -10,7 +10,7 @@ tags: [ "powershell" ]
 
 ### NTFS and Alternate what?
 
-*NTFS, the primary file system for recent versions of Windows and Windows Server, provides a full set of features including security descriptors, encryption, disk quotas, and rich metadata.* - as the [NTFS documentation](https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview) puts it. There's one thing the documentation does not mention however; the Alternate Data Streams (ADS). In fact I had to dig quite deep to find the [official documentation for NTFS Data Streams](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/b134f29a-6278-4f3f-904f-5e58a713d2c5).
+*NTFS, the primary file system for recent versions of Windows and Windows Server, provides a full set of features including security descriptors, encryption, disk quotas, and rich metadata.* - as the [NTFS documentation](https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview) puts it. However, one feature it doesn't highlight is **Alternate Data Streams (ADS)**. In fact I had to dig quite deep to find the [official documentation for NTFS Data Streams](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/b134f29a-6278-4f3f-904f-5e58a713d2c5).
 
 It turns out all files in NTFS are streams. That is, every file consist of at **least** one stream: the main stream. This the plain old file and it's content. The full name of the stream has the following form:
 
@@ -18,7 +18,7 @@ It turns out all files in NTFS are streams. That is, every file consist of at **
 <filename>:<stream name>:<stream type>
 ```
 
-As the default data stream has no name, this is how the stream name would look like for a regular `file.txt` where `$DATA` is the stream type:
+As the default data stream has no name, this is how the stream name would look like for a regular **file.txt** where **$DATA** is the stream type:
 
 ```ntfsstream
 file.txt::$DATA
@@ -30,7 +30,7 @@ Note that a file consist of at least one stream, meaning it can actually contain
 
 ![NTFS file security warning](ntfs-file-security-warning.png)
 
-This is actually an `Alternate Data Stream` with the name `Zone.Identifier` that has been added to the file by the browser when you downloaded it from the Internet.
+This warning is actually caused by an Alternate Data Stream with the name **Zone.Identifier**, that has been added to the file by the browser when you downloaded it from the Internet.
 
 You can even add the Zone.Identifier ADS to a file yourself if you like. With Powershell you can do it like this:
 
@@ -88,9 +88,9 @@ Remove-Item .\file.txt -Stream Zone.Identifier
 Remove-Item .\file.txt:Zone.Identifier
 ```
 
-### Evil streams
+### The dark side of streams
 
-So what if we take this one step further and not just put some text in the alternate data stream, but a whole file?
+Alternate Data Streams can be misused. For example, instead of storing harmless metadata, you could hide entire files within an alternate data stream.
 
 Let's make an evil.vbs script file with one line of code, that pops up a message box:
 
@@ -111,9 +111,7 @@ Let's check the alternate data streams for the .vbs file:
 
 ![.\file.txt:evil.vbs](evil.png)
 
-It's added in there along with the Zone.Identifier we added earlier, fairly well hidden to the user as it's not visible in Windows Explorer. The size change is not visible either, since the main data stream is still the same size.
-
-If we want to we can also execute the .vbs script with:
+It's added in there along with the Zone.Identifier we added earlier. These streams are invisible in Windows Explorer, and their presence doesn't affect the visible file size. However, the hidden script can still be executed:
 
 ```powershell
 wscript.exe .\file.txt:evil.vbs
@@ -121,8 +119,9 @@ wscript.exe .\file.txt:evil.vbs
 
 ![wscript exec](wscript-exec.png)
 
+While Alternate Data Streams provide useful capabilities, they also pose a security risk if misused. We've seen how they can be used to try improve security by appending a Zone.Identifier, but also how they can be used for bad by hiding rootkits or similar within files.
 
-Refs:
+References:
 - https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview
 - https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/b134f29a-6278-4f3f-904f-5e58a713d2c5
 - https://owasp.org/www-community/attacks/Windows_alternate_data_stream
